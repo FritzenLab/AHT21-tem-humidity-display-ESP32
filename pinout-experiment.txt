@@ -1,0 +1,4 @@
+reset gpio 10
+sck gpio 4
+DC gpio 0
+CS gpio 7
