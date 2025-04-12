@@ -72,6 +72,11 @@ void loop() {
   tft.setTextSize(1);
   tft.print(temp.temperature);
   tft.println(" oC");
+  tft.setCursor(20, 100);
+  tft.print("RH = ");
+  tft.setCursor(60, 100);
+  tft.print(humidity.relative_humidity);
+  tft.println(" %");
   delay(1000);
   testdrawrects(ST77XX_BLACK);
   //delay(5);
