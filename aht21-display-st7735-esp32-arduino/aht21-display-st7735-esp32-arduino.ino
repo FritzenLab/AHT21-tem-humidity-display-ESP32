@@ -37,11 +37,11 @@ void setup(void) {
   
 
   // large block of text
-  tft.setTextSize(2);
+  tft.setTextSize(1);
   tft.fillScreen(ST77XX_BLACK);
   tft.setCursor(5, 30);
   tft.setTextColor(ST77XX_GREEN);
-  tft.println("FritzenLab");
+  tft.println("Electronics-Lab");
   delay(1000);
   tft.setCursor(5, 60);
   Serial.println("Adafruit AHT10/AHT20 demo!");
@@ -68,13 +68,13 @@ void loop() {
   tft.setTextSize(1);
   tft.println(" seconds");
   tft.setCursor(20, 80);
-  tft.print("LM35= ");
+  tft.print("AHT21 = ");
   tft.setTextSize(1);
   tft.print(temp.temperature);
   tft.println(" oC");
-  delay(5);
+  delay(1000);
   testdrawrects(ST77XX_BLACK);
-  delay(5);
+  //delay(5);
 }
 
 void testdrawrects(uint16_t color) {
